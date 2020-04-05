@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import TodoInput from './Components/TodoInput';
 import TodoList from './Components/TodoList';
+import head from './Components/vino_Header'
 
 
 import uuid from 'react-uuid'
@@ -120,8 +121,10 @@ console.log(this.state.editTitle)
   render() {
     return(
     <div className="container jumbotron jumbotron jumbotron-billboard">
+      <head/>
       <div className="row ">
         <div className = "col-12 ">
+
           <h3 align="center" className="font-weight-bold -font-awesome-flag">Daily Task Manager.</h3>
           <h2 className="text-capitalize text-center font-weight-bold -font-awesome-flag">
             TODO INPUT
@@ -149,6 +152,7 @@ console.log(this.state.editTitle)
                        // handleState={this.handleState}
                         head="COMPLETED LIST"/>
             </div>
+            <head/>
           </div>
         </div>
       </div>
